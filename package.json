@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/AynurMv/space-launch#readme",
   "dependencies": {
+    "axios": "^0.27.2",
     "bcrypt": "^5.0.1",
     "bootstrap": "^5.2.0",
     "dotenv": "^16.0.1",

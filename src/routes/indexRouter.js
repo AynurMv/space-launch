@@ -14,7 +14,7 @@ route.get('/', async (req, res) => {
     res.write('<!DOCTYPE html>');
     res.end(html);
   } catch (err) {
-    console.error(err);
+    console.error('ERROR', err);
   }
 });
 
