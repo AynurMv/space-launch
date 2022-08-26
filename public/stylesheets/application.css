@@ -11,13 +11,15 @@ img {
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+
 }
 
 .block-text {
     padding-left: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
 }
 
 .time {
@@ -36,4 +38,14 @@ h4 {
 
 .dateOfLaunch {
     margin-top: 20px;
+}
+
+body {
+    /* background-color: rgb(203, 203, 203); */
+    background: url('https://cs5.pikabu.ru/images/big_size_comm_an/2015-11_6/1448716197119413644.gif') no-repeat right bottom;
+    background-size: 100%
+}
+
+html {
+    height: 100%;
 }

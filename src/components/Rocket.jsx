@@ -21,7 +21,7 @@ export default function Rocket({ el }) {
     let d = Math.floor(t / cd);
     let h = Math.floor((t - d * cd) / ch);
     let m = Math.round((t - d * cd - h * ch) / 60);
-    const s = Math.round(t - d * cd - h * ch - m * 60);
+    const s = Math.round(t - d * cd - h * ch - m * 60 + 30);
     if (s === 0) {
       m -= 1;
     //   s = 60;
@@ -38,33 +38,6 @@ export default function Rocket({ el }) {
   }
 
   const dateOfLaunchNewFormat = (new Date(el.net)).toLocaleDateString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-
-  //   function dateFormat(inputDate, format) {
-  //     // parse the input date
-  //     const date = new Date(inputDate);
-
-  //     // extract the parts of the date
-  //     const day = date.getDate();
-  //     const month = date.getMonth() + 1;
-  //     const year = date.getFullYear();
-
-  //     // replace the month
-  //     format = format.replace('MM', month.toString().padStart(2, '0'));
-
-  //     // replace the year
-  //     if (format.indexOf('yyyy') > -1) {
-  //       format = format.replace('yyyy', year.toString());
-  //     } else if (format.indexOf('yy') > -1) {
-  //       format = format.replace('yy', year.toString().substr(2, 2));
-  //     }
-
-  //     // replace the day
-  //     format = format.replace('dd', day.toString().padStart(2, '0'));
-
-  //     return format;
-  //   }
-
-  //   console.log(`Converted date: ${dateFormat('2021-12-10', 'MM-dd-yyyy')}`);
 
   return (
     <>
@@ -95,9 +68,6 @@ export default function Rocket({ el }) {
               {el.pad.location.name}
             </div>
             <h4>
-              {/* Дата запуска (
-              {el.net}
-              ) */}
               До запуска осталось:
             </h4>
             <div className="parent">
@@ -123,9 +93,6 @@ export default function Rocket({ el }) {
             <div className="dateOfLaunch">
               {dateOfLaunchNewFormat}
             </div>
-            {/* <button className="btn btn-default btn-read">
-              Read more
-            </button> */}
           </div>
           <div className="clearfix" />
         </div>

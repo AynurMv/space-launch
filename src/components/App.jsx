@@ -6,7 +6,7 @@ import RocketList from './RocketList';
 export default function App() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route path="/" element={<RocketList />} />
       </Routes>
