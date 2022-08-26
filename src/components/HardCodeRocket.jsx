@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
 export default function HardCodeRocket({ el }) {
-  const [count, setCount] = useState(1000);
+  const futureDate = new Date('August 26, 2022 00:00:00');
+  const dateOfLaunch = futureDate;
+  const currDate = new Date();
+  const seconds = Math.floor((dateOfLaunch - currDate) / 1000);
+  const [count, setCount] = useState(seconds);
   useEffect(() => {
     const id = setInterval(() => setCount((oldCount) => oldCount - 1), 1000);
 

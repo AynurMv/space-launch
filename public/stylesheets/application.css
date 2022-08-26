@@ -1,6 +1,7 @@
 img {
     width: 300px;
-    height: 300px; /* height of container */
+    height: 300px;
+    /* height of container */
     object-fit: cover;
     border-radius: 5px;
 }
@@ -8,23 +9,31 @@ img {
 .card {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 10px 10px;
 }
 
 .block-text {
     padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
 }
 
-.cropped1 {
-    width: 200px; /* width of container */
-    height: 200px; /* height of container */
-    object-fit: cover;
-    border: 5px solid black;
+.time {
+    margin-right: 10px;
 }
-.cropped2 {
-    width: 200px; /* width of container */
-    height: 200px; /* height of container */
-    object-fit: cover;
-    object-position: 20% 10%; /* try 20px 10px */ 
-    border: 5px solid black;
+
+.timeContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+h4 {
+    margin-top: 20px;
+}
+
+.dateOfLaunch {
+    margin-top: 20px;
 }
