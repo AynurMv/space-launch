@@ -20,6 +20,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .time {
@@ -42,10 +43,15 @@ h4 {
 
 body {
     /* background-color: rgb(203, 203, 203); */
-    background: url('https://cs5.pikabu.ru/images/big_size_comm_an/2015-11_6/1448716197119413644.gif') no-repeat right bottom;
+    background: url('https://cs5.pikabu.ru/images/big_size_comm_an/2015-11_6/1448716197119413644.gif') repeat right top;
     background-size: 100%
 }
 
 html {
     height: 100%;
+}
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -23,7 +23,7 @@ export default function Layout({ initState }) {
         <script defer src="/app.js" />
         <script defer src="/vendor.js" />
 
-        <title>Document</title>
+        <title>Space Launch</title>
       </head>
       <body>
         <div id="root">
